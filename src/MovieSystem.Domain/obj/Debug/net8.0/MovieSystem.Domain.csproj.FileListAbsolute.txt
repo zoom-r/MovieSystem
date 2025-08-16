@@ -1,0 +1,11 @@
+/Users/rado/Projects/MovieSystem/src/MovieSystem.Domain/bin/Debug/net8.0/MovieSystem.Domain.deps.json
+/Users/rado/Projects/MovieSystem/src/MovieSystem.Domain/bin/Debug/net8.0/MovieSystem.Domain.dll
+/Users/rado/Projects/MovieSystem/src/MovieSystem.Domain/bin/Debug/net8.0/MovieSystem.Domain.pdb
+/Users/rado/Projects/MovieSystem/src/MovieSystem.Domain/obj/Debug/net8.0/MovieSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rado/Projects/MovieSystem/src/MovieSystem.Domain/obj/Debug/net8.0/MovieSystem.Domain.AssemblyInfoInputs.cache
+/Users/rado/Projects/MovieSystem/src/MovieSystem.Domain/obj/Debug/net8.0/MovieSystem.Domain.AssemblyInfo.cs
+/Users/rado/Projects/MovieSystem/src/MovieSystem.Domain/obj/Debug/net8.0/MovieSystem.Domain.csproj.CoreCompileInputs.cache
+/Users/rado/Projects/MovieSystem/src/MovieSystem.Domain/obj/Debug/net8.0/MovieSystem.Domain.dll
+/Users/rado/Projects/MovieSystem/src/MovieSystem.Domain/obj/Debug/net8.0/refint/MovieSystem.Domain.dll
+/Users/rado/Projects/MovieSystem/src/MovieSystem.Domain/obj/Debug/net8.0/MovieSystem.Domain.pdb
+/Users/rado/Projects/MovieSystem/src/MovieSystem.Domain/obj/Debug/net8.0/ref/MovieSystem.Domain.dll

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "NFELfdu/o5c=",
+  "success": true,
+  "projectFilePath": "/Users/rado/Projects/MovieSystem/src/MovieSystem.Application/MovieSystem.Application.csproj",
+  "expectedPackageFiles": [
+    "/Users/rado/.nuget/packages/fluentvalidation/12.0.0/fluentvalidation.12.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
