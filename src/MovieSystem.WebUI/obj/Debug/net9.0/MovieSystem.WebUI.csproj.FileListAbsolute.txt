@@ -8,7 +8,6 @@
 /Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/bin/Debug/net9.0/MovieSystem.WebUI.dll
 /Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/bin/Debug/net9.0/MovieSystem.WebUI.pdb
 /Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/bin/Debug/net9.0/AutoMapper.dll
-/Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/bin/Debug/net9.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/bin/Debug/net9.0/FluentValidation.dll
 /Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/bin/Debug/net9.0/FluentValidation.AspNetCore.dll
 /Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/bin/Debug/net9.0/FluentValidation.DependencyInjectionExtensions.dll
@@ -54,7 +53,6 @@
 /Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/bin/Debug/net9.0/System.Composition.Hosting.dll
 /Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/bin/Debug/net9.0/System.Composition.Runtime.dll
 /Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/bin/Debug/net9.0/System.Composition.TypedParts.dll
-/Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/bin/Debug/net9.0/System.Text.Json.dll
 /Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.resources.dll
 /Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.resources.dll
 /Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.resources.dll

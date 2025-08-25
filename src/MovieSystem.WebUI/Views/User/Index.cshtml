@@ -1,0 +1,35 @@
+@model IEnumerable<MovieSystem.Application.DTOs.UserDto>
+@{
+    ViewData["Title"] = "Users";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Users</h1>
+
+<a class="btn btn-primary mb-3" href="@Url.Action("Create")">Add New User</a>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Full Name</th>
+        <th>Email</th>
+        <th>Date of Birth</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach(var user in Model)
+    {
+        <tr>
+            <td>@user.FullName</td>
+            <td>@user.Email</td>
+            <td>@user.DateOfBirth.ToShortDateString()</td>
+            <td>
+                <a class="btn btn-sm btn-info" href="@Url.Action("Details", new { id = user.UserId })">Details</a>
+                <a class="btn btn-sm btn-warning" href="@Url.Action("Edit", new { id = user.UserId })">Edit</a>
+                <a class="btn btn-sm btn-danger" href="@Url.Action("Delete", new { id = user.UserId })">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

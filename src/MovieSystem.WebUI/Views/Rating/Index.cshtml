@@ -1,0 +1,35 @@
+@model IEnumerable<MovieSystem.Application.DTOs.RatingDto>
+@{
+    ViewData["Title"] = "Ratings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Ratings</h1>
+
+<a class="btn btn-primary mb-3" href="@Url.Action("Create")">Add New Rating</a>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>User</th>
+        <th>Movie</th>
+        <th>Score</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach(var rating in Model)
+    {
+        <tr>
+            <td>@rating.UserName</td>
+            <td>@rating.MovieId</td>
+            <td>@rating.Score</td>
+            <td>
+                <a class="btn btn-sm btn-info" href="@Url.Action("Details", new { id = rating.RatingId })">Details</a>
+                <a class="btn btn-sm btn-warning" href="@Url.Action("Edit", new { id = rating.RatingId })">Edit</a>
+                <a class="btn btn-sm btn-danger" href="@Url.Action("Delete", new { id = rating.RatingId })">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

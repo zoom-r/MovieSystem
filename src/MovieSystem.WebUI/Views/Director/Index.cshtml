@@ -1,0 +1,35 @@
+@model IEnumerable<MovieSystem.Application.DTOs.DirectorDto>
+@{
+    ViewData["Title"] = "Directors";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Directors</h1>
+
+<a class="btn btn-primary mb-3" href="@Url.Action("Create")">Add New Director</a>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Birth Date</th>
+        <th>Nationality</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach(var director in Model)
+    {
+        <tr>
+            <td>@director.Name</td>
+            <td>@director.BirthDate.ToShortDateString()</td>
+            <td>@director.Nationality</td>
+            <td>
+                <a class="btn btn-sm btn-info" href="@Url.Action("Details", new { id = director.DirectorId })">Details</a>
+                <a class="btn btn-sm btn-warning" href="@Url.Action("Edit", new { id = director.DirectorId })">Edit</a>
+                <a class="btn btn-sm btn-danger" href="@Url.Action("Delete", new { id = director.DirectorId })">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

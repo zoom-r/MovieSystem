@@ -14,6 +14,11 @@ public class AppDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<User>().ToTable("User");
+        modelBuilder.Entity<Movie>().ToTable("Movie");
+        modelBuilder.Entity<Rating>().ToTable("Rating");
+        modelBuilder.Entity<Director>().ToTable("Director");
+        
         // User
         modelBuilder.Entity<User>(e =>
         {

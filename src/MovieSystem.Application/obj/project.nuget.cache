@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "k3SXD9zYD5M=",
+  "dgSpecHash": "BFJaJ1wdwPc=",
   "success": true,
   "projectFilePath": "/Users/rado/Projects/MovieSystem/src/MovieSystem.Application/MovieSystem.Application.csproj",
   "expectedPackageFiles": [
     "/Users/rado/.nuget/packages/automapper/15.0.1/automapper.15.0.1.nupkg.sha512",
-    "/Users/rado/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "/Users/rado/.nuget/packages/fluentvalidation/11.11.0/fluentvalidation.11.11.0.nupkg.sha512",
     "/Users/rado/.nuget/packages/fluentvalidation.aspnetcore/11.3.1/fluentvalidation.aspnetcore.11.3.1.nupkg.sha512",
     "/Users/rado/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.11.0/fluentvalidation.dependencyinjectionextensions.11.11.0.nupkg.sha512",
@@ -35,18 +34,5 @@
     "/Users/rado/.nuget/packages/npgsql/9.0.3/npgsql.9.0.3.nupkg.sha512",
     "/Users/rado/.nuget/packages/npgsql.entityframeworkcore.postgresql/9.0.4/npgsql.entityframeworkcore.postgresql.9.0.4.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "message": "Detected package version outside of dependency constraint: AutoMapper.Extensions.Microsoft.DependencyInjection 12.0.1 requires AutoMapper (= 12.0.1) but version AutoMapper 15.0.1 was resolved.",
-      "projectPath": "/Users/rado/Projects/MovieSystem/src/MovieSystem.Application/MovieSystem.Application.csproj",
-      "warningLevel": 1,
-      "filePath": "/Users/rado/Projects/MovieSystem/src/MovieSystem.Application/MovieSystem.Application.csproj",
-      "libraryId": "AutoMapper",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    }
-  ]
+  "logs": []
 }

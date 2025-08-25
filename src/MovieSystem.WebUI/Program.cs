@@ -1,4 +1,3 @@
-using System.Reflection;
 using MovieSystem.Domain.Interfaces;
 using MovieSystem.Infrastructure.Repositories;
 using MovieSystem.Application.Mapping;
@@ -16,7 +15,10 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
 
-builder.Services.AddAutoMapper(typeof(MappingProfile));
+builder.Services.AddAutoMapper(cfg =>
+{
+    cfg.AddProfile<MappingProfile>();
+});
 
 builder.Services.AddControllersWithViews()
     .AddFluentValidation(fv =>
@@ -42,11 +44,7 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "MovieSystem API v1");
-        c.RoutePrefix = "swagger"; // Swagger at /swagger
-    });
+    app.UseSwaggerUI();
 }
 else 
 {

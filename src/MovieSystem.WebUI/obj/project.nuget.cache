@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ZKK4k3JB9o4=",
+  "dgSpecHash": "gRPqWywQ11I=",
   "success": true,
   "projectFilePath": "/Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/MovieSystem.WebUI.csproj",
   "expectedPackageFiles": [
     "/Users/rado/.nuget/packages/automapper/15.0.1/automapper.15.0.1.nupkg.sha512",
-    "/Users/rado/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "/Users/rado/.nuget/packages/fluentvalidation/11.11.0/fluentvalidation.11.11.0.nupkg.sha512",
     "/Users/rado/.nuget/packages/fluentvalidation.aspnetcore/11.3.1/fluentvalidation.aspnetcore.11.3.1.nupkg.sha512",
     "/Users/rado/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.11.0/fluentvalidation.dependencyinjectionextensions.11.11.0.nupkg.sha512",
@@ -67,18 +66,5 @@
     "/Users/rado/.nuget/packages/system.text.json/9.0.8/system.text.json.9.0.8.nupkg.sha512",
     "/Users/rado/.nuget/packages/system.threading.channels/7.0.0/system.threading.channels.7.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "message": "Detected package version outside of dependency constraint: AutoMapper.Extensions.Microsoft.DependencyInjection 12.0.1 requires AutoMapper (= 12.0.1) but version AutoMapper 15.0.1 was resolved.",
-      "projectPath": "/Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/MovieSystem.WebUI.csproj",
-      "warningLevel": 1,
-      "filePath": "/Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/MovieSystem.WebUI.csproj",
-      "libraryId": "AutoMapper",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    }
-  ]
+  "logs": []
 }
