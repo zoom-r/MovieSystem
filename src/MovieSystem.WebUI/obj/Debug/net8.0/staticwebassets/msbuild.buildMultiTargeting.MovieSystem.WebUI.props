@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../build/MovieSystem.WebUI.props" />
-</Project>

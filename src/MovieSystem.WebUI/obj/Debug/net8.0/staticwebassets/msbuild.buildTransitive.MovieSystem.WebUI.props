@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../buildMultiTargeting/MovieSystem.WebUI.props" />
-</Project>

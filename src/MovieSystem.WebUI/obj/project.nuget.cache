@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FYf71ab4Xck=",
+  "dgSpecHash": "5MLQmyrJEMA=",
   "success": true,
   "projectFilePath": "/Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/MovieSystem.WebUI.csproj",
   "expectedPackageFiles": [
@@ -24,6 +24,7 @@
     "/Users/rado/.nuget/packages/microsoft.entityframeworkcore.analyzers/9.0.8/microsoft.entityframeworkcore.analyzers.9.0.8.nupkg.sha512",
     "/Users/rado/.nuget/packages/microsoft.entityframeworkcore.design/9.0.8/microsoft.entityframeworkcore.design.9.0.8.nupkg.sha512",
     "/Users/rado/.nuget/packages/microsoft.entityframeworkcore.relational/9.0.8/microsoft.entityframeworkcore.relational.9.0.8.nupkg.sha512",
+    "/Users/rado/.nuget/packages/microsoft.extensions.apidescription.server/9.0.0/microsoft.extensions.apidescription.server.9.0.0.nupkg.sha512",
     "/Users/rado/.nuget/packages/microsoft.extensions.caching.abstractions/9.0.8/microsoft.extensions.caching.abstractions.9.0.8.nupkg.sha512",
     "/Users/rado/.nuget/packages/microsoft.extensions.caching.memory/9.0.8/microsoft.extensions.caching.memory.9.0.8.nupkg.sha512",
     "/Users/rado/.nuget/packages/microsoft.extensions.configuration/9.0.8/microsoft.extensions.configuration.9.0.8.nupkg.sha512",
@@ -44,9 +45,14 @@
     "/Users/rado/.nuget/packages/microsoft.identitymodel.jsonwebtokens/8.0.1/microsoft.identitymodel.jsonwebtokens.8.0.1.nupkg.sha512",
     "/Users/rado/.nuget/packages/microsoft.identitymodel.logging/8.0.1/microsoft.identitymodel.logging.8.0.1.nupkg.sha512",
     "/Users/rado/.nuget/packages/microsoft.identitymodel.tokens/8.0.1/microsoft.identitymodel.tokens.8.0.1.nupkg.sha512",
+    "/Users/rado/.nuget/packages/microsoft.openapi/1.6.23/microsoft.openapi.1.6.23.nupkg.sha512",
     "/Users/rado/.nuget/packages/mono.texttemplating/3.0.0/mono.texttemplating.3.0.0.nupkg.sha512",
     "/Users/rado/.nuget/packages/npgsql/9.0.3/npgsql.9.0.3.nupkg.sha512",
     "/Users/rado/.nuget/packages/npgsql.entityframeworkcore.postgresql/9.0.4/npgsql.entityframeworkcore.postgresql.9.0.4.nupkg.sha512",
+    "/Users/rado/.nuget/packages/swashbuckle.aspnetcore/9.0.3/swashbuckle.aspnetcore.9.0.3.nupkg.sha512",
+    "/Users/rado/.nuget/packages/swashbuckle.aspnetcore.swagger/9.0.3/swashbuckle.aspnetcore.swagger.9.0.3.nupkg.sha512",
+    "/Users/rado/.nuget/packages/swashbuckle.aspnetcore.swaggergen/9.0.3/swashbuckle.aspnetcore.swaggergen.9.0.3.nupkg.sha512",
+    "/Users/rado/.nuget/packages/swashbuckle.aspnetcore.swaggerui/9.0.3/swashbuckle.aspnetcore.swaggerui.9.0.3.nupkg.sha512",
     "/Users/rado/.nuget/packages/system.codedom/6.0.0/system.codedom.6.0.0.nupkg.sha512",
     "/Users/rado/.nuget/packages/system.collections.immutable/7.0.0/system.collections.immutable.7.0.0.nupkg.sha512",
     "/Users/rado/.nuget/packages/system.composition/7.0.0/system.composition.7.0.0.nupkg.sha512",
@@ -55,16 +61,11 @@
     "/Users/rado/.nuget/packages/system.composition.hosting/7.0.0/system.composition.hosting.7.0.0.nupkg.sha512",
     "/Users/rado/.nuget/packages/system.composition.runtime/7.0.0/system.composition.runtime.7.0.0.nupkg.sha512",
     "/Users/rado/.nuget/packages/system.composition.typedparts/7.0.0/system.composition.typedparts.7.0.0.nupkg.sha512",
-    "/Users/rado/.nuget/packages/system.diagnostics.diagnosticsource/9.0.8/system.diagnostics.diagnosticsource.9.0.8.nupkg.sha512",
-    "/Users/rado/.nuget/packages/system.io.pipelines/9.0.8/system.io.pipelines.9.0.8.nupkg.sha512",
+    "/Users/rado/.nuget/packages/system.io.pipelines/7.0.0/system.io.pipelines.7.0.0.nupkg.sha512",
     "/Users/rado/.nuget/packages/system.reflection.metadata/7.0.0/system.reflection.metadata.7.0.0.nupkg.sha512",
     "/Users/rado/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "/Users/rado/.nuget/packages/system.text.encodings.web/9.0.8/system.text.encodings.web.9.0.8.nupkg.sha512",
     "/Users/rado/.nuget/packages/system.text.json/9.0.8/system.text.json.9.0.8.nupkg.sha512",
-    "/Users/rado/.nuget/packages/system.threading.channels/7.0.0/system.threading.channels.7.0.0.nupkg.sha512",
-    "/Users/rado/.nuget/packages/microsoft.netcore.app.ref/8.0.18/microsoft.netcore.app.ref.8.0.18.nupkg.sha512",
-    "/Users/rado/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.18/microsoft.aspnetcore.app.ref.8.0.18.nupkg.sha512",
-    "/Users/rado/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.18/microsoft.netcore.app.host.osx-arm64.8.0.18.nupkg.sha512"
+    "/Users/rado/.nuget/packages/system.threading.channels/7.0.0/system.threading.channels.7.0.0.nupkg.sha512"
   ],
   "logs": [
     {
@@ -76,7 +77,7 @@
       "filePath": "/Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/MovieSystem.WebUI.csproj",
       "libraryId": "AutoMapper",
       "targetGraphs": [
-        "net8.0"
+        "net9.0"
       ]
     }
   ]

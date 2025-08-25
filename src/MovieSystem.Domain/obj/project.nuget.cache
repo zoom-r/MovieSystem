@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cxDZVY7b3F8=",
+  "dgSpecHash": "2VechBZORZY=",
   "success": true,
   "projectFilePath": "/Users/rado/Projects/MovieSystem/src/MovieSystem.Domain/MovieSystem.Domain.csproj",
-  "expectedPackageFiles": [
-    "/Users/rado/.nuget/packages/microsoft.netcore.app.ref/8.0.18/microsoft.netcore.app.ref.8.0.18.nupkg.sha512",
-    "/Users/rado/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.18/microsoft.aspnetcore.app.ref.8.0.18.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

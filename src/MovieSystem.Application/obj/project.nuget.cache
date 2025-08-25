@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DrE3Ocw56e8=",
+  "dgSpecHash": "F6PucHb8PC0=",
   "success": true,
   "projectFilePath": "/Users/rado/Projects/MovieSystem/src/MovieSystem.Application/MovieSystem.Application.csproj",
   "expectedPackageFiles": [
@@ -8,18 +8,31 @@
     "/Users/rado/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "/Users/rado/.nuget/packages/fluentvalidation/12.0.0/fluentvalidation.12.0.0.nupkg.sha512",
     "/Users/rado/.nuget/packages/fluentvalidation.dependencyinjectionextensions/12.0.0/fluentvalidation.dependencyinjectionextensions.12.0.0.nupkg.sha512",
-    "/Users/rado/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.0/microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
-    "/Users/rado/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "/Users/rado/.nuget/packages/microsoft.extensions.logging/8.0.0/microsoft.extensions.logging.8.0.0.nupkg.sha512",
-    "/Users/rado/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
-    "/Users/rado/.nuget/packages/microsoft.extensions.options/8.0.0/microsoft.extensions.options.8.0.0.nupkg.sha512",
-    "/Users/rado/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "/Users/rado/.nuget/packages/microsoft.entityframeworkcore/9.0.8/microsoft.entityframeworkcore.9.0.8.nupkg.sha512",
+    "/Users/rado/.nuget/packages/microsoft.entityframeworkcore.abstractions/9.0.8/microsoft.entityframeworkcore.abstractions.9.0.8.nupkg.sha512",
+    "/Users/rado/.nuget/packages/microsoft.entityframeworkcore.analyzers/9.0.8/microsoft.entityframeworkcore.analyzers.9.0.8.nupkg.sha512",
+    "/Users/rado/.nuget/packages/microsoft.entityframeworkcore.relational/9.0.1/microsoft.entityframeworkcore.relational.9.0.1.nupkg.sha512",
+    "/Users/rado/.nuget/packages/microsoft.extensions.caching.abstractions/9.0.8/microsoft.extensions.caching.abstractions.9.0.8.nupkg.sha512",
+    "/Users/rado/.nuget/packages/microsoft.extensions.caching.memory/9.0.8/microsoft.extensions.caching.memory.9.0.8.nupkg.sha512",
+    "/Users/rado/.nuget/packages/microsoft.extensions.configuration/9.0.8/microsoft.extensions.configuration.9.0.8.nupkg.sha512",
+    "/Users/rado/.nuget/packages/microsoft.extensions.configuration.abstractions/9.0.8/microsoft.extensions.configuration.abstractions.9.0.8.nupkg.sha512",
+    "/Users/rado/.nuget/packages/microsoft.extensions.configuration.fileextensions/9.0.8/microsoft.extensions.configuration.fileextensions.9.0.8.nupkg.sha512",
+    "/Users/rado/.nuget/packages/microsoft.extensions.configuration.json/9.0.8/microsoft.extensions.configuration.json.9.0.8.nupkg.sha512",
+    "/Users/rado/.nuget/packages/microsoft.extensions.dependencyinjection/9.0.8/microsoft.extensions.dependencyinjection.9.0.8.nupkg.sha512",
+    "/Users/rado/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.8/microsoft.extensions.dependencyinjection.abstractions.9.0.8.nupkg.sha512",
+    "/Users/rado/.nuget/packages/microsoft.extensions.fileproviders.abstractions/9.0.8/microsoft.extensions.fileproviders.abstractions.9.0.8.nupkg.sha512",
+    "/Users/rado/.nuget/packages/microsoft.extensions.fileproviders.physical/9.0.8/microsoft.extensions.fileproviders.physical.9.0.8.nupkg.sha512",
+    "/Users/rado/.nuget/packages/microsoft.extensions.filesystemglobbing/9.0.8/microsoft.extensions.filesystemglobbing.9.0.8.nupkg.sha512",
+    "/Users/rado/.nuget/packages/microsoft.extensions.logging/9.0.8/microsoft.extensions.logging.9.0.8.nupkg.sha512",
+    "/Users/rado/.nuget/packages/microsoft.extensions.logging.abstractions/9.0.8/microsoft.extensions.logging.abstractions.9.0.8.nupkg.sha512",
+    "/Users/rado/.nuget/packages/microsoft.extensions.options/9.0.8/microsoft.extensions.options.9.0.8.nupkg.sha512",
+    "/Users/rado/.nuget/packages/microsoft.extensions.primitives/9.0.8/microsoft.extensions.primitives.9.0.8.nupkg.sha512",
     "/Users/rado/.nuget/packages/microsoft.identitymodel.abstractions/8.0.1/microsoft.identitymodel.abstractions.8.0.1.nupkg.sha512",
     "/Users/rado/.nuget/packages/microsoft.identitymodel.jsonwebtokens/8.0.1/microsoft.identitymodel.jsonwebtokens.8.0.1.nupkg.sha512",
     "/Users/rado/.nuget/packages/microsoft.identitymodel.logging/8.0.1/microsoft.identitymodel.logging.8.0.1.nupkg.sha512",
     "/Users/rado/.nuget/packages/microsoft.identitymodel.tokens/8.0.1/microsoft.identitymodel.tokens.8.0.1.nupkg.sha512",
-    "/Users/rado/.nuget/packages/microsoft.netcore.app.ref/8.0.18/microsoft.netcore.app.ref.8.0.18.nupkg.sha512",
-    "/Users/rado/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.18/microsoft.aspnetcore.app.ref.8.0.18.nupkg.sha512"
+    "/Users/rado/.nuget/packages/npgsql/9.0.3/npgsql.9.0.3.nupkg.sha512",
+    "/Users/rado/.nuget/packages/npgsql.entityframeworkcore.postgresql/9.0.4/npgsql.entityframeworkcore.postgresql.9.0.4.nupkg.sha512"
   ],
   "logs": [
     {
@@ -31,7 +44,7 @@
       "filePath": "/Users/rado/Projects/MovieSystem/src/MovieSystem.Application/MovieSystem.Application.csproj",
       "libraryId": "AutoMapper",
       "targetGraphs": [
-        "net8.0"
+        "net9.0"
       ]
     }
   ]

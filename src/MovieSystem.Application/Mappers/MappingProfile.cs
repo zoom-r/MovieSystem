@@ -10,7 +10,6 @@ public class MappingProfile : Profile
     {
         CreateMap<Movie, MovieDto>()
             .ForMember(dest => dest.DirectorName, opt => opt.MapFrom(src => src.Director.Name));
-
         CreateMap<User, UserDto>()
             .ForMember(dest => dest.Name, opt => opt.MapFrom(src => $"{src.FirstName} {src.LastName}"));
         CreateMap<Director, DirectorDto>();
