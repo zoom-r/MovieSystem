@@ -19,3 +19,5 @@ build_property.RootNamespace = MovieSystem.Infrastructure
 build_property.ProjectDir = /Users/rado/Projects/MovieSystem/src/MovieSystem.Infrastructure/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 

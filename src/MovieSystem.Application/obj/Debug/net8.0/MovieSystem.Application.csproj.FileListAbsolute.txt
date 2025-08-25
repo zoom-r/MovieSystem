@@ -13,3 +13,4 @@
 /Users/rado/Projects/MovieSystem/src/MovieSystem.Application/obj/Debug/net8.0/refint/MovieSystem.Application.dll
 /Users/rado/Projects/MovieSystem/src/MovieSystem.Application/obj/Debug/net8.0/MovieSystem.Application.pdb
 /Users/rado/Projects/MovieSystem/src/MovieSystem.Application/obj/Debug/net8.0/ref/MovieSystem.Application.dll
+/Users/rado/Projects/MovieSystem/src/MovieSystem.Application/obj/Debug/net8.0/MovieSystem.Application.sourcelink.json

@@ -9,3 +9,4 @@
 /Users/rado/Projects/MovieSystem/src/MovieSystem.Domain/obj/Debug/net8.0/refint/MovieSystem.Domain.dll
 /Users/rado/Projects/MovieSystem/src/MovieSystem.Domain/obj/Debug/net8.0/MovieSystem.Domain.pdb
 /Users/rado/Projects/MovieSystem/src/MovieSystem.Domain/obj/Debug/net8.0/ref/MovieSystem.Domain.dll
+/Users/rado/Projects/MovieSystem/src/MovieSystem.Domain/obj/Debug/net8.0/MovieSystem.Domain.sourcelink.json
