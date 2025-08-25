@@ -9,34 +9,55 @@ public class MovieService
 {
     private readonly IMapper _mapper;
     private readonly IMovieRepository _movieRepository;
-    
+
     public MovieService(IMapper mapper, IMovieRepository movieRepository)
     {
         _mapper = mapper;
         _movieRepository = movieRepository;
     }
-    
-    public MovieDto GetById(Guid id) =>
-        _mapper.Map<MovieDto>(_movieRepository.GetByIdAsync(id).Result);
-    
-    public IEnumerable<MovieDto> GetAll() =>
-        _mapper.Map<IEnumerable<MovieDto>>(_movieRepository.GetAllAsync().Result);
-    
-    public IEnumerable<MovieDto> GetByDirectorId(Guid directorId) =>
-        _mapper.Map<IEnumerable<MovieDto>>(_movieRepository.GetByDirectorIdAsync(directorId).Result);
-    
-    public IEnumerable<MovieDto> GetByUserIdWithRatings(Guid userId) =>
-        _mapper.Map<IEnumerable<MovieDto>>(_movieRepository.GetByUserIdWithRatingsAsync(userId).Result);
-    
-    public IEnumerable<MovieDto> GetTopRated(int count) =>
-        _mapper.Map<IEnumerable<MovieDto>>(_movieRepository.GetTopRatedAsync(count).Result);
-    
-    public void Add(Movie movie) =>
-        _movieRepository.AddAsync(movie).Wait();
-    
-    public void Update(Movie movie) =>
-        _movieRepository.UpdateAsync(movie).Wait();
-    
-    public void Delete(Guid id) =>
-        _movieRepository.DeleteAsync(id).Wait();
+
+    public async Task<MovieDto?> GetByIdAsync(Guid id)
+    {
+        var movie = await _movieRepository.GetByIdAsync(id);
+        return _mapper.Map<MovieDto>(movie);
+    }
+
+    public async Task<IEnumerable<MovieDto>> GetAllAsync()
+    {
+        var movies = await _movieRepository.GetAllAsync();
+        return _mapper.Map<IEnumerable<MovieDto>>(movies);
+    }
+
+    public async Task<IEnumerable<MovieDto>> GetByDirectorIdAsync(Guid directorId)
+    {
+        var movies = await _movieRepository.GetByDirectorIdAsync(directorId);
+        return _mapper.Map<IEnumerable<MovieDto>>(movies);
+    }
+
+    public async Task<IEnumerable<MovieDto>> GetByUserIdWithRatingsAsync(Guid userId)
+    {
+        var movies = await _movieRepository.GetByUserIdWithRatingsAsync(userId);
+        return _mapper.Map<IEnumerable<MovieDto>>(movies);
+    }
+
+    public async Task<IEnumerable<MovieDto>> GetTopRatedAsync(int count)
+    {
+        var movies = await _movieRepository.GetTopRatedAsync(count);
+        return _mapper.Map<IEnumerable<MovieDto>>(movies);
+    }
+
+    public async Task AddAsync(MovieDto dto)
+    {
+        var movie = _mapper.Map<Movie>(dto);
+        await _movieRepository.AddAsync(movie);
+    }
+
+    public async Task UpdateAsync(MovieDto dto)
+    {
+        var movie = _mapper.Map<Movie>(dto);
+        await _movieRepository.UpdateAsync(movie);
+    }
+
+    public async Task DeleteAsync(Guid id) =>
+        await _movieRepository.DeleteAsync(id);
 }

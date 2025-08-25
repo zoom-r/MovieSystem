@@ -7,9 +7,20 @@ public class MovieValidator : AbstractValidator<MovieDto>
 {
     public MovieValidator()
     {
-        RuleFor(x => x.MovieId).NotEmpty();
-        RuleFor(x => x.Title).NotEmpty().MaximumLength(100);
-        RuleFor(x => x.Genre).NotEmpty();
-        RuleFor(x => x.ReleaseDate).LessThan(DateTime.Now);
+        RuleFor(x => x.MovieId)
+            .NotEmpty();
+
+        RuleFor(x => x.Title)
+            .NotEmpty().WithMessage("Title is required")
+            .MaximumLength(100).WithMessage("Title must not exceed 100 characters");
+
+        RuleFor(x => x.Genre)
+            .NotEmpty().WithMessage("Genre is required");
+
+        RuleFor(x => x.ReleaseDate)
+            .LessThanOrEqualTo(DateTime.Now).WithMessage("Release date cannot be in the future");
+
+        RuleFor(x => x.DirectorId)
+            .NotEmpty().WithMessage("DirectorId is required");
     }
 }

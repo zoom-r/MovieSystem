@@ -6,5 +6,6 @@ public class MovieDto
     public string Title { get; set; } = string.Empty;
     public string Genre { get; set; } = string.Empty;
     public DateTime ReleaseDate { get; set; }
+    public Guid DirectorId { get; set; }
     public string DirectorName { get; set; } = string.Empty;
 }
