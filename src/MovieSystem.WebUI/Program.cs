@@ -1,3 +1,4 @@
+using System.Reflection;
 using MovieSystem.Domain.Interfaces;
 using MovieSystem.Infrastructure.Repositories;
 using MovieSystem.Application.Mapping;
@@ -13,20 +14,21 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllersWithViews();
-//builder.Configuration.GetConnectionString("DefaultConnection");
+
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
 builder.Services.AddAutoMapper(typeof(MappingProfile));
-builder.Services.AddFluentValidationAutoValidation();
+
+var assembly = Assembly.GetExecutingAssembly();
+builder.Services.AddControllers()
+    .AddFluentValidation(fv => fv.RegisterValidatorsFromAssembly(assembly));
+
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IMovieRepository, MovieRepository>();
 builder.Services.AddScoped<IDirectorRepository, DirectorRepository>();
 builder.Services.AddScoped<IRatingRepository, RatingRepository>();
-builder.Services.AddValidatorsFromAssemblyContaining<MovieValidator>();
-builder.Services.AddValidatorsFromAssemblyContaining<UserValidator>();
-builder.Services.AddValidatorsFromAssemblyContaining<DirectorRepository>();
-builder.Services.AddValidatorsFromAssemblyContaining<RatingRepository>();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
