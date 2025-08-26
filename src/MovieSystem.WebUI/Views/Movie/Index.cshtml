@@ -1,34 +1,29 @@
 @model IEnumerable<MovieSystem.Application.DTOs.MovieDto>
+
 @{
     ViewData["Title"] = "Movies";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h1>Movies</h1>
+
 <a class="btn btn-primary mb-3" asp-action="Create">Add New Movie</a>
 
-<table class="table table-striped">
+<table class="table table-bordered table-striped">
     <thead>
     <tr>
         <th>Title</th>
-        <th>Genre</th>
-        <th>Release Date</th>
-        <th>Director</th>
-        <th>Actions</th>
+        <th></th>
     </tr>
     </thead>
     <tbody>
-    @foreach(var movie in Model)
+    @foreach (var movie in Model)
     {
         <tr>
             <td>@movie.Title</td>
-            <td>@movie.Genre</td>
-            <td>@movie.ReleaseDate.ToShortDateString()</td>
-            <td>@movie.DirectorName</td>
             <td>
-                <a class="btn btn-sm btn-info" asp-action="Details" asp-route-id="@movie.MovieId">Details</a>
-                <a class="btn btn-sm btn-warning" asp-action="Edit" asp-route-id="@movie.MovieId">Edit</a>
-                <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@movie.MovieId">Delete</a>
+                <a class="btn btn-info btn-sm" asp-action="Details" asp-route-id="@movie.MovieId">Details</a>
+                <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@movie.MovieId">Edit</a>
+                <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@movie.MovieId">Delete</a>
             </td>
         </tr>
     }

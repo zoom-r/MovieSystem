@@ -1,7 +1,7 @@
 @model MovieSystem.Application.DTOs.MovieDto
+
 @{
     ViewData["Title"] = "Edit Movie";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h1>Edit Movie</h1>
@@ -33,6 +33,6 @@
         <span asp-validation-for="DirectorId" class="text-danger"></span>
     </div>
 
-    <button type="submit" class="btn btn-primary">Save Changes</button>
+    <button type="submit" class="btn btn-primary">Update</button>
     <a class="btn btn-secondary" asp-action="Index">Cancel</a>
 </form>

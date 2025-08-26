@@ -2,52 +2,85 @@ using Microsoft.AspNetCore.Mvc;
 using MovieSystem.Application.DTOs;
 using MovieSystem.Application.Services;
 
-public class UserController : Controller
+namespace MovieSystem.WebUI.Controllers
 {
-    private readonly UserService _userService;
-
-    public UserController(UserService userService)
+    public class UserController : Controller
     {
-        _userService = userService;
-    }
+        private readonly UserService _userService;
 
-    public async Task<IActionResult> Index() => View(await _userService.GetAllAsync());
+        public UserController(UserService userService)
+        {
+            _userService = userService;
+        }
 
-    public async Task<IActionResult> Details(Guid id)
-    {
-        var user = await _userService.GetByIdAsync(id);
-        if (user == null) return NotFound();
-        return View(user);
-    }
+        // GET: Users
+        public async Task<IActionResult> Index()
+        {
+            var users = await _userService.GetAllAsync();
+            return View(users);
+        }
 
-    public IActionResult Create() => View();
+        // GET: Users/Details/5
+        public async Task<IActionResult> Details(Guid id)
+        {
+            var user = await _userService.GetByIdAsync(id);
+            if (user == null) return NotFound();
+            return View(user);
+        }
 
-    [HttpPost]
-    public async Task<IActionResult> Create(UserDto dto)
-    {
-        if (!ModelState.IsValid) return View(dto);
-        await _userService.AddAsync(dto);
-        return RedirectToAction(nameof(Index));
-    }
+        // GET: Users/Create
+        public IActionResult Create()
+        {
+            return View();
+        }
 
-    public async Task<IActionResult> Edit(Guid id)
-    {
-        var user = await _userService.GetByIdAsync(id);
-        if (user == null) return NotFound();
-        return View(user);
-    }
+        // POST: Users/Create
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(UserDto dto)
+        {
+            if (!ModelState.IsValid)
+                return View(dto);
 
-    [HttpPost]
-    public async Task<IActionResult> Edit(UserDto dto)
-    {
-        if (!ModelState.IsValid) return View(dto);
-        await _userService.UpdateAsync(dto);
-        return RedirectToAction(nameof(Index));
-    }
+            await _userService.AddAsync(dto);
+            return RedirectToAction(nameof(Index));
+        }
 
-    public async Task<IActionResult> Delete(Guid id)
-    {
-        await _userService.DeleteAsync(id);
-        return RedirectToAction(nameof(Index));
+        // GET: Users/Edit/5
+        public async Task<IActionResult> Edit(Guid id)
+        {
+            var user = await _userService.GetByIdAsync(id);
+            if (user == null) return NotFound();
+            return View(user);
+        }
+
+        // POST: Users/Edit/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(UserDto dto)
+        {
+            if (!ModelState.IsValid)
+                return View(dto);
+
+            await _userService.UpdateAsync(dto);
+            return RedirectToAction(nameof(Index));
+        }
+
+        // GET: Users/Delete/5
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            var user = await _userService.GetByIdAsync(id);
+            if (user == null) return NotFound();
+            return View(user);
+        }
+
+        // POST: Users/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(Guid id)
+        {
+            await _userService.DeleteAsync(id);
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

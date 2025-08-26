@@ -20,3 +20,17 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/* Card hover effect for homepage */
+.home-card:hover {
+  transform: translateY(-5px);
+  transition: 0.2s ease-in-out;
+}
+
+.home-card i {
+  color: #0d6efd; /* Bootstrap primary color */
+}
+
+.home-card h5 {
+  margin-top: 10px;
+}

@@ -1,7 +1,7 @@
 @model MovieSystem.Application.DTOs.RatingDto
+
 @{
     ViewData["Title"] = "Edit Rating";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h1>Edit Rating</h1>
@@ -10,23 +10,23 @@
     <input type="hidden" asp-for="RatingId" />
 
     <div class="mb-3">
-        <label asp-for="UserId" class="form-label">User</label>
-        <select asp-for="UserId" class="form-select" asp-items="@(new SelectList(ViewBag.Users, "UserId", "FullName"))"></select>
+        <label asp-for="UserName" class="form-label">User</label>
+        <select asp-for="UserId" class="form-select" asp-items="ViewBag.Users"></select>
         <span asp-validation-for="UserId" class="text-danger"></span>
     </div>
 
     <div class="mb-3">
         <label asp-for="MovieId" class="form-label">Movie</label>
-        <select asp-for="MovieId" class="form-select" asp-items="@(new SelectList(ViewBag.Movies, "MovieId", "Title"))"></select>
+        <select asp-for="MovieId" class="form-select" asp-items="ViewBag.Movies"></select>
         <span asp-validation-for="MovieId" class="text-danger"></span>
     </div>
 
     <div class="mb-3">
         <label asp-for="Score" class="form-label"></label>
-        <input asp-for="Score" type="number" class="form-control" min="1" max="10" />
+        <input asp-for="Score" class="form-control" />
         <span asp-validation-for="Score" class="text-danger"></span>
     </div>
 
-    <button type="submit" class="btn btn-primary">Save Changes</button>
-    <a class="btn btn-secondary" href="@Url.Action("Index")">Cancel</a>
+    <button type="submit" class="btn btn-primary">Update</button>
+    <a class="btn btn-secondary" asp-action="Index">Cancel</a>
 </form>

@@ -7,9 +7,6 @@ public class MovieValidator : AbstractValidator<MovieDto>
 {
     public MovieValidator()
     {
-        RuleFor(x => x.MovieId)
-            .NotEmpty();
-
         RuleFor(x => x.Title)
             .NotEmpty().WithMessage("Title is required")
             .MaximumLength(100).WithMessage("Title must not exceed 100 characters");

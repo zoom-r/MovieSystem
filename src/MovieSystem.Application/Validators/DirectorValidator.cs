@@ -7,9 +7,6 @@ public class DirectorValidator : AbstractValidator<DirectorDto>
 {
     public DirectorValidator()
     {
-        RuleFor(x => x.DirectorId)
-            .NotEmpty();
-
         RuleFor(x => x.Name)
             .NotEmpty().WithMessage("Director name is required")
             .MaximumLength(100);

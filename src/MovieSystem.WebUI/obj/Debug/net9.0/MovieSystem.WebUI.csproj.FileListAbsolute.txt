@@ -141,7 +141,6 @@
 /Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/obj/Debug/net9.0/scopedcss/bundle/MovieSystem.WebUI.styles.css
 /Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/obj/Debug/net9.0/scopedcss/projectbundle/MovieSystem.WebUI.bundle.scp.css
-/Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/obj/Debug/net9.0/compressed/v462rf8q1u-c2tiyv64ts.gz
 /Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/obj/Debug/net9.0/compressed/nrn5qvac5i-61n19gt1b8.gz
 /Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/obj/Debug/net9.0/compressed/u7jy09j5nw-xtxxf3hu2r.gz
 /Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/obj/Debug/net9.0/compressed/nda7y95639-agp80tu62r.gz
@@ -212,7 +211,4 @@
 /Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/obj/Debug/net9.0/MovieSystem.WebUI.pdb
 /Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/obj/Debug/net9.0/MovieSystem.WebUI.genruntimeconfig.cache
 /Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/obj/Debug/net9.0/ref/MovieSystem.WebUI.dll
-/Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/bin/Debug/net9.0/Microsoft.OpenApi.dll
-/Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
-/Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
-/Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/rado/Projects/MovieSystem/src/MovieSystem.WebUI/obj/Debug/net9.0/compressed/v462rf8q1u-tkhfbngqwn.gz

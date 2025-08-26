@@ -7,9 +7,6 @@ public class UserValidator : AbstractValidator<UserDto>
 {
     public UserValidator()
     {
-        RuleFor(x => x.UserId)
-            .NotEmpty();
-
         RuleFor(x => x.FirstName)
             .NotEmpty().WithMessage("First name is required")
             .MaximumLength(50);

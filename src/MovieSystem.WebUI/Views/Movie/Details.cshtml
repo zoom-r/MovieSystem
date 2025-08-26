@@ -1,14 +1,17 @@
 @model MovieSystem.Application.DTOs.MovieDto
+
 @{
     ViewData["Title"] = "Movie Details";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h1>@Model.Title</h1>
+
+<p><strong>Movie ID:</strong> @Model.MovieId</p>
 <p><strong>Genre:</strong> @Model.Genre</p>
 <p><strong>Release Date:</strong> @Model.ReleaseDate.ToShortDateString()</p>
 <p><strong>Director:</strong> @Model.DirectorName</p>
+<p><strong>Director ID:</strong> @Model.DirectorId</p>
 
-<a class="btn btn-secondary" asp-action="Index">Back to List</a>
+<a class="btn btn-secondary" asp-action="Index">Back</a>
 <a class="btn btn-warning" asp-action="Edit" asp-route-id="@Model.MovieId">Edit</a>
 <a class="btn btn-danger" asp-action="Delete" asp-route-id="@Model.MovieId">Delete</a>

@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using MovieSystem.Application.DTOs;
 using MovieSystem.Application.Services;
-using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace MovieSystem.WebUI.Controllers
 {
@@ -16,14 +16,14 @@ namespace MovieSystem.WebUI.Controllers
             _directorService = directorService;
         }
 
-        // GET: /Movie
+        // GET: Movies
         public async Task<IActionResult> Index()
         {
             var movies = await _movieService.GetAllAsync();
             return View(movies);
         }
 
-        // GET: /Movie/Details/{id}
+        // GET: Movies/Details/5
         public async Task<IActionResult> Details(Guid id)
         {
             var movie = await _movieService.GetByIdAsync(id);
@@ -31,21 +31,23 @@ namespace MovieSystem.WebUI.Controllers
             return View(movie);
         }
 
-        // GET: /Movie/Create
+        // GET: Movies/Create
         public async Task<IActionResult> Create()
         {
-            await PopulateDirectors();
+            var directors = await _directorService.GetAllAsync();
+            ViewBag.Directors = new SelectList(directors, "DirectorId", "Name");
             return View();
         }
 
-        // POST: /Movie/Create
+        // POST: Movies/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(MovieDto dto)
         {
             if (!ModelState.IsValid)
             {
-                await PopulateDirectors();
+                var directors = await _directorService.GetAllAsync();
+                ViewBag.Directors = new SelectList(directors, "DirectorId", "Name", dto.DirectorId);
                 return View(dto);
             }
 
@@ -53,24 +55,27 @@ namespace MovieSystem.WebUI.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // GET: /Movie/Edit/{id}
+        // GET: Movies/Edit/5
         public async Task<IActionResult> Edit(Guid id)
         {
             var movie = await _movieService.GetByIdAsync(id);
             if (movie == null) return NotFound();
 
-            await PopulateDirectors();
+            var directors = await _directorService.GetAllAsync();
+            ViewBag.Directors = new SelectList(directors, "DirectorId", "Name", movie.DirectorId);
+
             return View(movie);
         }
 
-        // POST: /Movie/Edit
+        // POST: Movies/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(MovieDto dto)
         {
             if (!ModelState.IsValid)
             {
-                await PopulateDirectors();
+                var directors = await _directorService.GetAllAsync();
+                ViewBag.Directors = new SelectList(directors, "DirectorId", "Name", dto.DirectorId);
                 return View(dto);
             }
 
@@ -78,17 +83,21 @@ namespace MovieSystem.WebUI.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        [HttpDelete]
+        // GET: Movies/Delete/5
         public async Task<IActionResult> Delete(Guid id)
         {
-            await _movieService.DeleteAsync(id);
-            return Ok(new { message = "Deleted successfully" });
+            var movie = await _movieService.GetByIdAsync(id);
+            if (movie == null) return NotFound();
+            return View(movie);
         }
 
-        private async Task PopulateDirectors()
+        // POST: Movies/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
-            var directors = await _directorService.GetAllAsync();
-            ViewBag.Directors = new SelectList(directors, "DirectorId", "Name");
+            await _movieService.DeleteAsync(id);
+            return RedirectToAction(nameof(Index));
         }
     }
 }
